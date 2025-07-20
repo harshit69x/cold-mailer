@@ -82,7 +82,7 @@ export default function EmailSenderPage() {
       formDataToSend.append("resume_file", formData.resumeFile!)
 
       // Replace with your actual backend URL
-      const response = await fetch("http://localhost:8000/send-emails/", {
+      const response = await fetch("https://coldmailer-ouoi.onrender.com/send-emails/", {
         method: "POST",
         body: formDataToSend,
       })
